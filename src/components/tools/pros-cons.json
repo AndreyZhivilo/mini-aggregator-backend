@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_tools_pros_cons",
+  "info": {
+    "displayName": "ProsCons",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "Pros": {
+      "type": "text"
+    },
+    "Cons": {
+      "type": "text"
+    }
+  }
+}

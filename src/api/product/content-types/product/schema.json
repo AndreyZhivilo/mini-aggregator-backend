@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Video": {
+      "type": "text"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "products"
+    },
+    "Pros_Cons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tools.pros-cons"
+    },
+    "Rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 3
+    },
+    "Recomend": {
+      "type": "integer",
+      "min": 0,
+      "default": 2
+    },
+    "No_recomend": {
+      "type": "integer",
+      "min": 0,
+      "default": 1
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "Price": {
+      "type": "integer",
+      "min": 0
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
+    },
+    "buttons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::button.button",
+      "mappedBy": "products"
+    }
+  }
+}

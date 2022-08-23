@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buttons",
+  "info": {
+    "singularName": "button",
+    "pluralName": "buttons",
+    "displayName": "Button",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "buttons"
+    },
+    "Direct_link": {
+      "type": "boolean",
+      "default": false
+    },
+    "Anchor": {
+      "type": "string"
+    },
+    "No_follow": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

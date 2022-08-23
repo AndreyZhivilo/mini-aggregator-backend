@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_tools_quiz_sections",
+  "info": {
+    "displayName": "Quiz_section",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Option": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tools.quiz"
+    }
+  }
+}

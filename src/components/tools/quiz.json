@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_tools_quizzes",
+  "info": {
+    "displayName": "Quiz_option",
+    "icon": "bicycle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Option": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

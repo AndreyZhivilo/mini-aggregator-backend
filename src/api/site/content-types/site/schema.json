@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Site_url": {
+      "type": "string"
+    },
+    "Allow_index": {
+      "type": "boolean",
+      "default": false
+    },
+    "H1": {
+      "type": "string"
+    },
+    "SEO_title": {
+      "type": "string"
+    },
+    "SEO_description": {
+      "type": "text"
+    },
+    "Author_name": {
+      "type": "string"
+    },
+    "Author_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Author_description": {
+      "type": "text"
+    },
+    "Intro_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Intro_text": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "site"
+    },
+    "Contact_mail": {
+      "type": "email",
+      "default": "admin@mail.ru"
+    },
+    "Text_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tools.text-card"
+    },
+    "Quiz": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tools.quiz-section"
+    },
+    "Quiz_title": {
+      "type": "string"
+    },
+    "Quiz_intro": {
+      "type": "richtext"
+    },
+    "Favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Metrika": {
+      "type": "text"
+    }
+  }
+}
