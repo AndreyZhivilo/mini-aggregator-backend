@@ -79,6 +79,17 @@
       "relation": "manyToMany",
       "target": "api::button.button",
       "mappedBy": "products"
+    },
+    "Priority": {
+      "type": "integer",
+      "default": 0,
+      "max": 10,
+      "min": 0
+    },
+    "Cervice_info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tools.cervice-info"
     }
   }
 }

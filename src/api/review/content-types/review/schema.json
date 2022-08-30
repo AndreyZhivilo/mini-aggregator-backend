@@ -28,6 +28,9 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "reviews"
+    },
+    "Author_mail": {
+      "type": "email"
     }
   }
 }

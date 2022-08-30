@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_tools_cervice_infos",
+  "info": {
+    "displayName": "Cervice_info",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Adress": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Opening_hours": {
+      "type": "text"
+    },
+    "Cervices": {
+      "type": "richtext"
+    },
+    "Site_name": {
+      "type": "string"
+    },
+    "Site_url": {
+      "type": "string"
+    }
+  }
+}

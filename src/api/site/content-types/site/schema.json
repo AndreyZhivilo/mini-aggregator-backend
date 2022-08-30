@@ -101,6 +101,30 @@
     },
     "Metrika": {
       "type": "text"
+    },
+    "Script_head": {
+      "type": "text"
+    },
+    "Telegram": {
+      "type": "string"
+    },
+    "VK": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Promo_title": {
+      "type": "string"
+    },
+    "Promo_texts": {
+      "type": "richtext"
+    },
+    "Promo_number": {
+      "type": "integer"
     }
   }
 }
